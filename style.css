@@ -1,0 +1,137 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justified;
+    background-color: #24292e;
+    margin: 0;
+
+
+
+}
+
+.box {
+
+
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 70px;
+    border-style: none;
+    margin-top: 80px;
+
+}
+
+
+
+
+p {
+    font-size: 16px;
+    line-height: 150%;
+    color: white;
+}
+
+.p2 {
+
+    font-size: 22px;
+    text-align: justify;
+    margin-right: 25px;
+    margin-top: 40px;
+
+} 
+
+h1 {
+
+    color: white;
+    text-align: center;
+
+
+}
+
+
+
+
+.center {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.img1 {
+    display: block;
+    border-radius: 5%;
+    width: 300px;
+    height: 370px;
+    margin-right: 30px;
+    
+}
+
+.img2 {
+
+    display: block;
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+.bio1 {
+
+    display: flex;
+    align-items: stretch;
+
+}
+
+
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+
+}
+
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 11px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+
+
+.navbar a:hover {
+    color: black;
+    opacity: 0.5;
+}
+
+.p {
+
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 15px;
+    font-size: small;
+    font-weight: bold;
+
+}
+
+.spotify {
+
+    border-radius: 12px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+  
