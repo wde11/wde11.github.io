@@ -308,7 +308,7 @@ video {
 ul, li, a {
     font-family: "Montserrat", sans-serif;
     margin-left: 12px;
-    font-weight: 10px;
+    font-weight: 10;
     color: white;
     text-decoration: none;
     
