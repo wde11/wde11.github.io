@@ -21,7 +21,6 @@ body.showcase {
 
 /* Profile */
 
-
 .section__container {
     min-height: 100vh;
     max-width: 1150px;
@@ -40,7 +39,7 @@ body.showcase {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
-    
+
 }
 
 .title {
@@ -95,9 +94,7 @@ body.showcase {
     transform: scale(1.1);
     cursor: pointer;
 
-
 }
-
 
 /* Navigation Bar */
 .navbar {
@@ -117,7 +114,6 @@ body.showcase {
     text-decoration: none;
     font-size: 25px;
 
-
 }
 
 .navbar a:hover {
@@ -125,17 +121,15 @@ body.showcase {
     opacity: 0.5;
 }
 
-
-
 /* Miscellaneous */
 .right-float {
-
     float: right;
 
 }
 
-.left-float {   
+.left-float {
     float: left;
+
 }
 
 .spotify {
@@ -145,7 +139,6 @@ body.showcase {
     width: 100%;
     height: 352px;
     border: none;
-
 
 }
 
@@ -160,9 +153,7 @@ span {
     text-shadow: 4px 4px #0063f8;
 }
 
-
 /* Font */
-
 
 p {
     font-family: "Montserrat", sans-serif;
@@ -198,7 +189,6 @@ h5 {
     transition: transform 0.4s ease;
 }
 
-
 /* Icons */
 
 .icon {
@@ -211,8 +201,7 @@ h5 {
 
 .logo {
     text-decoration: none;
-    width: 2.5%;
-
+    width: 3.5rem;
     position: fixed;
 }
 
@@ -223,13 +212,10 @@ h5 {
     color: white;
 }
 
-
-
 .micon a:hover {
     color: rgb(0, 0, 0);
     opacity: 0.5;
 }
-
 
 /* Showcase */
 
@@ -256,7 +242,6 @@ video {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
 }
-
 
 .showcase__content {
     justify-content: center;
@@ -293,6 +278,7 @@ video {
     place-items: center;
 
 }
+
 .gallery-image img {
     width: min(35rem, 90%);
     border-radius: 20px;
@@ -303,44 +289,51 @@ video {
     display: inline;
 }
 
+.title-showcase {
+    font-size: 36px;
+    font-weight: 750;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
 /* list */
 
 ul, li, a {
     font-family: "Montserrat", sans-serif;
     margin-left: 12px;
-    font-weight: 10px;
+    font-weight: 350;
     color: white;
     text-decoration: none;
-    
+
 }
 
 ul li a:hover {
-color: #c2c2c2;
+    color: #c2c2c2;
 }
-
 
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 10px; 
+    gap: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .bean-button {
-    background-color: #ffffff; 
-    color: #005A9C; 
-    padding: 15px 30px; 
-    border: none; 
-    border-radius: 50px; 
-    font-size: 16px; 
-    cursor: pointer; 
+    background-color: #ffffff;
+    color: #005A9C;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
 }
 
 .bean-button:hover {
-    background-color: #9e9e9e; 
+    background-color: #9e9e9e;
 }
 
 .bottomfooter {
@@ -353,18 +346,112 @@ color: #c2c2c2;
 
 /* Table */
 
-table, td, th{
+table, td, th {
     border: 1px solid rgb(168, 168, 168);
     font-family: "Montserrat", sans-serif;
-    padding: 1rem; 
+    padding: 1rem;
     background-color: #2b3137;
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
-    
+
 }
 
 .table-container {
     margin-bottom: 100px;
 
+}
+
+/* Media Query */
+
+/* 768px */
+
+@media (max-width: 768px) {
+
+  body .section__container, .section__container2, .showcase__container, .showcase__music {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar a {
+        font-size: 20px;
+        padding: 10px 8px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .title, .header-title {
+        font-size: 30px;
+    }
+
+    .description, .showcase__description {
+        font-size: 18px;
+    }
+
+    .image img, .project-image img, .cover-photo img, .gallery-image img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .spotify {
+        height: 300px;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    video {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    table, td, th {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  body .section__container, .section__container2, .showcase__container, .showcase__music {
+        grid-template-columns: 1fr;
+    }
+
+    .title, .header-title {
+        font-size: 24px;
+    }
+
+    .description, .showcase__description {
+        font-size: 16px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        padding: 8px 6px;
+    }
+
+    .image img, .project-image img, .cover-photo img, .gallery-image img {
+        width: 50%;
+    }
+
+    .spotify {
+        height: 250px;
+    }
+
+    .button-container {
+        gap: 5px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    table, td, th {
+        font-size: 12px;
+        padding: 0.5rem;
+    }
 }
