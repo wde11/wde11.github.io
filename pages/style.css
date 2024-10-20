@@ -364,7 +364,7 @@ table, td, th {
 /* Media Query */
 
 /* 768 */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
     body .section__container, .section__container2, .showcase__container, .showcase__music {
           grid-template-columns: 1fr;
@@ -389,8 +389,7 @@ table, td, th {
   
       .image img, .project-image img, .cover-photo img, .gallery-image img {
           width: 80%;
-          display: flex;
-          justify-content: center;
+          
       }
   
       .spotify {
@@ -416,7 +415,7 @@ table, td, th {
   /* 480px */
   @media (max-width: 480px) {
     body .section__container, .section__container2, .showcase__container, .showcase__music {
-          grid-template-columns: 1fr;
+          width: 80%;
       }
   
       .title, .header-title {
@@ -426,14 +425,20 @@ table, td, th {
       .description, .showcase__description {
           font-size: 16px;
       }
+
+      .logo {
+        width: 30px;
+    }
+
   
       .navbar a {
-          font-size: 18px;
-          padding: 8px 6px;
-      }
+        font-size: 20px;
+        padding: 10px 8px;
+    }
   
       .image img, .project-image img, .cover-photo img, .gallery-image img {
-          width: 50%;
+          width: 60%;
+        
       }
   
       .spotify {
@@ -454,6 +459,6 @@ table, td, th {
       }
 
       audio {
-        width: 75%;
+        width: 50%;
       }
   }
