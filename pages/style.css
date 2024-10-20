@@ -15,6 +15,10 @@ body {
 
 }
 
+
+
+
+
 body.showcase {
     background-image: linear-gradient(#2b3137, #000000, #2b3137);
 }
@@ -363,7 +367,6 @@ table, td, th {
 
 /* Media Query */
 
-/* 768 */
 @media (max-width: 1000px) {
 
     body .section__container, .section__container2, .showcase__container, .showcase__music {
@@ -412,53 +415,57 @@ table, td, th {
       }
   }
   
-  /* 480px */
-  @media (max-width: 480px) {
-    body .section__container, .section__container2, .showcase__container, .showcase__music {
-          width: 80%;
-      }
-  
-      .title, .header-title {
-          font-size: 24px;
-      }
-  
-      .description, .showcase__description {
-          font-size: 16px;
-      }
 
-      .logo {
-        width: 30px;
-    }
-
-  
-      .navbar a {
-        font-size: 20px;
-        padding: 10px 8px;
-    }
-  
-      .image img, .project-image img, .cover-photo img, .gallery-image img {
-          width: 60%;
+  @media (min-width: 481px) and (max-width: 768px) {
+    .section__container, .section__container2, .showcase__container, .showcase__music {
+        width: 90%;
+        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: center;
         
-      }
-  
-      .spotify {
-          height: 250px;
-      }
-  
-      .button-container {
-          gap: 5px;
-      }
-  
-      video {
-          width: 100%;
-      }
-  
-      table, td, th {
-          font-size: 12px;
-          padding: 0.5rem;
-      }
+    }
 
-      audio {
-        width: 50%;
-      }
-  }
+    .navbar a {
+        font-size: 19px;
+        padding: 9px 7px;
+    }
+
+    .logo {
+        width: 45px;
+    }
+
+    .title, .header-title {
+        font-size: 26px;
+    }
+
+    .description, .showcase__description {
+        font-size: 16px;
+    }
+
+    .image img, .project-image img, .cover-photo img, .gallery-image img {
+        width: 85%;
+    }
+
+    .spotify {
+        height: 260px;
+    }
+
+    .button-container {
+        gap: 5px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    table, td, th {
+        font-size: 12px;
+        padding: 0.5rem;
+    }
+
+    audio {
+        width: 75%;
+        display: block;
+        justify-content: center;
+    }
+}
