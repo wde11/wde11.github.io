@@ -446,15 +446,12 @@ table, td, th {
         flex-direction: column;
     }
 
-    video {
+    .project-image img {
+        display: block;
+        justify-content: center;
         width: 100%;
-        margin-right: 0;
     }
-
-    table, td, th {
-        width: 100%;
-        font-size: 14px;
-    }
+    
 }
 
 /* 480px */
@@ -476,8 +473,14 @@ table, td, th {
         padding: 8px 6px;
     }
 
-    .image img, .project-image img, .cover-photo img, .gallery-image img {
+    .image img, .cover-photo img, .gallery-image img {
         width: 50%;
+    }
+
+    .project-image img {
+        display: block;
+        justify-content: center;
+        width: 100%;
     }
 
     .spotify {
@@ -488,14 +491,6 @@ table, td, th {
         gap: 5px;
     }
 
-    video {
-        width: 100%;
-    }
-
-    table, td, th {
-        font-size: 12px;
-        padding: 0.5rem;
-    }
 }
 
 .switch {
