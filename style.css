@@ -11,7 +11,6 @@ body {
     background-color: #005A9C;
     text-align: justify;
     color: #ffffff;
-    ;
     transition: background-color 0.4s ease, color 0.4s ease;
 
 }
@@ -60,6 +59,41 @@ body.showcase {
     font-size: 36px;
     font-weight: 400;
     line-height: 3rem;
+}
+
+/* poke */
+
+.pokemon-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center; /* Center align all elements */
+    text-align: center; /* Ensure text is centered */
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.poke-img {
+    max-width: 200px; /* Adjust image size */
+    margin-bottom: 20px; /* Space between image and info */
+}
+
+.poke-info {
+    margin-bottom: 20px; /* Space between info and button */
+}
+
+.get-pkn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50; /* Add background color */
+    color: white; /* White text color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+.get-pkn:hover {
+    background-color: #45a049; /* Slightly darker on hover */
 }
 
 .content {
@@ -223,9 +257,7 @@ h5 {
     opacity: 0.5;
 }
 
-/* Showcase */
-
-video {
+/* video {
     width: 800px;
     display: flex;
     margin-right: 100px;
@@ -300,7 +332,7 @@ video {
     font-weight: 750;
     line-height: 3rem;
     margin-bottom: 1rem;
-}
+} */
 
 /* list */
 
@@ -350,6 +382,7 @@ ul li a:hover {
 
 }
 
+
 /* Table */
 
 table, td, th {
@@ -368,9 +401,8 @@ table, td, th {
 
 }
 
+
 /* Media Query */
-
-
 
 @media (max-width: 768px) {
 
@@ -520,3 +552,4 @@ input:checked+.slider .light-icon {
 input:checked+.slider .dark-icon {
     opacity: 1;
 }
+
